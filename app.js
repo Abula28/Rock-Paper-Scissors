@@ -74,12 +74,12 @@ buttons.paper.addEventListener("click", function () {
     winner.innerHTML = "CPU Won";
     cScoreCounter++;
     scores.cScore.innerHTML = cScoreCounter;
-    scores.pScore.classList.add("addTxt");
+    scores.cScore.classList.add("addTxt");
   } else {
     winner.innerHTML = "Player Won";
     pScoreCounter++;
     scores.pScore.innerHTML = pScoreCounter;
-    scores.cScore.classList.add("addTxt");
+    scores.pScore.classList.add("addTxt");
   }
 
   choices.pChoice.classList.add("add");

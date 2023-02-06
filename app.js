@@ -2,6 +2,7 @@ const buttons = {
   rock: document.querySelector(".rock"),
   paper: document.querySelector(".paper"),
   scissors: document.querySelector(".scissors"),
+  darkTheme: document.querySelector('.check')
 };
 
 const winner = document.querySelector(".winner");
@@ -23,6 +24,10 @@ let cScoreCounter = 0;
 
 let pResult = "";
 let cResult = "";
+
+buttons.darkTheme.addEventListener('click', function(){
+  document.body.classList.toggle('dark-theme')
+})
 
 buttons.rock.addEventListener("click", function () {
   cResult = cpuMoves[Math.floor(Math.random() * cpuMoves.length)];

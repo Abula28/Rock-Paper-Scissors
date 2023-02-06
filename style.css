@@ -39,6 +39,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0px;
 }
 
 .scores p {
@@ -124,4 +125,38 @@ body {
   background: #334d50;
   background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);
   background: linear-gradient(to right, #cbcaa5, #334d50);
+}
+
+
+@media(max-width: 800px){
+
+  .winner{
+    text-align: center;
+    font-size: 35px;
+  }
+  .main{
+    width: 400px;
+  }
+
+  .scores p {
+    font-size: 25px;
+  }
+  
+  .btns button{
+    padding: 10px 25px;
+  }
+}
+
+@media(max-width: 500px){
+  .main{
+    width: 90%;
+  }
+
+  .scores p {
+    font-size: 20px;
+  }
+
+  .btns button{
+    padding: 10px 15px;
+  }
 }
